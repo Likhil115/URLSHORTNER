@@ -10,7 +10,7 @@ const userroute=require("./routes/userroutes.js");
 
 const cookieParser = require("cookie-parser");
 const {checkforauthentication,restrictTo}=require("./middleware/auth.js")
-mongoose.connect("mongodb://127.0.0.1:27017/urlshortner").then(()=>console.log("connected"));
+mongoose.connect("mongodb+srv://likhilvenkat123:9Juiw3r6ZweNE1rQ@cluster0.prkohun.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>console.log("connected"));
 app.use(cookieParser())
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
